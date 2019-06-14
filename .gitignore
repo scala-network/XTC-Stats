@@ -1,0 +1,26 @@
+/.classpath
+/.project
+/.settings
+/.gradle
+/bin
+/build
+/target
+
+/examples
+/tools
+xtc-stats.log*
+
+# ignore les fichiers de profils utilisateur gradle (conserve build & settings)
+/*.gradle
+!/build.gradle
+!/settings.gradle
+
+#####################
+# gradle ignores
+#####################
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Cache of project
+.gradletasknamecache

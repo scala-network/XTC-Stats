@@ -1,0 +1,39 @@
+server:
+  port: 8686
+  address: 192.168.1.40
+  sessionTimeout: 30
+  contextPath: /
+
+xtc-stats:
+  version: 0.2.0
+
+lmdb:
+  torque_home: /home/gviel/torque_clone
+
+  blockchain:
+    env_path: lmdb
+    block_info: block_info
+
+  stats:
+    env_path: lmdb_stats
+    map_size_gb: 4
+    max_db: 10
+    max_readers: 3
+    reward_by_height: reward_by_height
+    attacks_in_future: attack_future
+    attacks_in_past: attack_past
+    attacks_on_size: attack_size
+    max_update_size: 100
+
+attack:
+  attack_delay_sec: 20
+  attack_block_size_bytes: 512
+
+debug: false
+trace: false
+logging.file: /home/gviel/STELLITE/xtc-stats/logs/xtc-stats.log
+
+spring:
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
