@@ -23,7 +23,7 @@ The application-prod.yaml at the project root directory must be modified
     
 -   In section lmdb, put your torque home directory like this :
     
-    `stelllite_home: /home/hayzam/torque_clone`
+    `torque_home: /home/hayzam/torque_clone`
     
 -   `env_path:lmdb_stats`  : The env_path is the name (relative path) of the new LMDB stats db.
     
